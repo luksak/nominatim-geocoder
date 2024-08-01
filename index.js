@@ -91,7 +91,8 @@ class Nominatim {
         
         axios.get(url, { 
           params: queryObject.plainObject(), 
-          headers: this.options.headers })
+          headers: this.options.headers
+        })
           .then((response) => {
             resolve(response.data)
           })
